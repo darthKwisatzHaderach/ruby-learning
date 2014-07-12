@@ -8,11 +8,7 @@
 def calculate(numbers)  
   multiplication = numbers.inject{ |result, element| result = result * element } 
   l = numbers.length	
-  if l == 3
-  	geometric = Math.cbrt(multiplication).round
-  else
-  	geometric = multiplication ** (1.0/l)
-  end
+  geometric = multiplication ** (1.0/l)
   return geometric
 end
 
