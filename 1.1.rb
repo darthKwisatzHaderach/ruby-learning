@@ -47,7 +47,7 @@ def check_number(number)
 end
 
 def find_armstrongs
-  0..10_000.each do
+  for i in 0..10_000 do
     modified_number = 0
     array_of_digits = i.to_s.split(//)
     array_of_digits.each do |n|
